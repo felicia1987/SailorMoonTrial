@@ -118,13 +118,16 @@ ul li {
     float: left;
 }
 
-#header.fixed {
+#header.modifyTemp {
     background-color: #fff;
 }
-#header.fixed a {
+.navbar-default.modifyTemp {
+    background-color: #fff;
+}
+.navbar-default.modifyTemp a {
     color: #000;
 }
-#header.fixed .navbar-default {
+.navbar-default.modifyTemp {
     border-bottom: 0;
     padding: 25px 0;
 }
@@ -138,7 +141,7 @@ ul li {
 	transition: opacity 0.5s;
 }
 
-.navbar-text {
+.navbar-text a {
 	float: right;
 	color: rgba(255, 255, 255, 0.75);
 	font-size: 13px;
@@ -349,6 +352,7 @@ ul li {
 .footer .footer-col {
 	margin-bottom: 80px;
 }
+
 .footer h5 {
 	color: #fff;
 	margin-bottom: 20px;
@@ -361,11 +365,13 @@ ul li {
 	color: white;
 	background-color: #181818;
 }
+
 .footer tbody {
 	color: white;
 }
 .footer thead {
 	color: white;
+	font-size: 16px;
 }
 .footer a:hover {
 	color: #e84545;
@@ -379,14 +385,15 @@ ul li {
 }
 .footer .footer-share a {
 	border: none;
-	font-size: 21px;
 	color: white;
 }
+
 .footer .fa-heart {
 	color: #e84545;
-	font-size: 11px;
 	margin: 0 2px;
+	font-size: 11px;
 }
+
 
 
   @include media-breakpoint-up(sm) {

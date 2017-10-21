@@ -1,5 +1,18 @@
 /* webcoder assignment JavaScript */
 
+// Header Scroll
+$(window).on('scroll', function() {
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 50) {
+        $('.navbar-default').addClass('modifyTemp');
+        $('#header').addClass('modifyTemp');
+    } else {
+        $('.navbar-default').removeClass('modifyTemp');
+        $('#header').removeClass('modifyTemp');
+    }
+});
+
 // on submitting the form
 $('form').submit(function (event) {
             
@@ -67,15 +80,4 @@ $('#close-id').click(function(){
 
     // enable the form
     $('form :input').prop('disabled', false);  
-});
-    
-// Header Scroll
-$(window).on('scroll', function() {
-    var scroll = $(window).scrollTop();
-
-    if (scroll >= 50) {
-        $('#header').addClass('fixed');
-    } else {
-        $('#header').removeClass('fixed');
-    }
 });
